@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/348c550b29.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/348c550b29.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="dist/main.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/dtl3yvq.css" />
     <title>Clock</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="clock-container">
       <div class="container-content">
-          <div id="timezone">
-              <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-                  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                      <header class="modal__header">
-                        <h2 class="modal__title">
-                          Change Timezone
-                        </h2>
-                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                      </header>
-                      <div class="modal-content-content">
-                        <div class="modal__content">
-                          <select id="options">
-                              <option value="maca">Pick a timezone</option>
-                          </select>
-                          <button id="button-apply" data-micromodal-close>Apply</button>
-                        </div>
-                      </div>
-                    </div>
+        <div id="timezone">
+          <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+              <div
+                class="modal__container"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-1-title"
+              >
+                <header class="modal__header">
+                  <h2 class="modal__title">Change Timezone</h2>
+                  <button
+                    class="modal__close"
+                    aria-label="Close modal"
+                    data-micromodal-close
+                  ></button>
+                </header>
+                <div class="modal-content-content">
+                  <div class="modal__content">
+                    <select id="options">
+                      <option value="maca">Pick a timezone</option>
+                    </select>
+                    <button id="button-apply" data-micromodal-close>
+                      Apply
+                    </button>
                   </div>
                 </div>
-                
-                <div class="extern_modal">
-                  <button id="modal_extern_btn" class="external" data-micromodal-trigger="modal-1">Europe/London</button>
-                  <i class="fa-regular fa-pen-to-square" data-micromodal-trigger="modal-1"></i>
-                </div>
-                
-          </div>  
-          <div id="hours-container">
-              <h1 id="hours"></h1>
+              </div>
+            </div>
           </div>
-          <div id="date-container">
-              <span id="date"></span>
+
+          <div class="extern_modal">
+            <button
+              id="modal_extern_btn"
+              class="external"
+              data-micromodal-trigger="modal-1"
+            >
+              Europe/London
+            </button>
+            <i
+              class="fa-regular fa-pen-to-square"
+              data-micromodal-trigger="modal-1"
+            ></i>
           </div>
+        </div>
+        <div id="hours-container">
+          <h1 id="hours"></h1>
+        </div>
+        <div id="date-container">
+          <span id="date"></span>
+        </div>
       </div>
     </div>
-</body>
+  </body>
 </html>

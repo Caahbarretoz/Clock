@@ -28,6 +28,7 @@ body {
 }
 
 .container-content {
+    width: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,16 +38,17 @@ body {
 #timezone {
     position: relative;
     margin-left: auto;
-    margin-right: 2px;
+    margin-right: 14px;
 }
 
 #hours-container {
     font-size: 50px;
+    font-family: "silicone";
 }
 
 #date-container {
     position: relative;
-   
+    font-family: "silicone";
 }
 
 
@@ -237,4 +239,10 @@ select {
 
 .extern_modal i {
     cursor: pointer;
+}
+
+.silicone-bold-italic {
+    font-family: "silicone", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
